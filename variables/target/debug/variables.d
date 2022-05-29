@@ -1,0 +1,1 @@
+/home/adminuser/Documents/2022/dev/rust/skillshare/learning-rust-cleancut/learning-rust-cleancut/variables/target/debug/variables: /home/adminuser/Documents/2022/dev/rust/skillshare/learning-rust-cleancut/learning-rust-cleancut/variables/src/main.rs
