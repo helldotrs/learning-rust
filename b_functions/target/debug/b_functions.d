@@ -1,0 +1,1 @@
+/home/adminuser/Documents/2022/dev/rust/skillshare/learning-rust-cleancut/learning-rust-cleancut/b_functions/target/debug/b_functions: /home/adminuser/Documents/2022/dev/rust/skillshare/learning-rust-cleancut/learning-rust-cleancut/b_functions/src/main.rs
