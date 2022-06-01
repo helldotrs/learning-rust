@@ -9,7 +9,7 @@ fn main() {
     //
     // ...produces the equivalent of
     //
-    //     vec!["apple".to_string(), "banana".to_string()]
+    //    vec!["apple".to_string(), "banana".to_string()];
     let args: Vec<String> = std::env::args().skip(1).collect();
 
     // This consumes the `args` vector to iterate through each String
@@ -21,7 +21,7 @@ fn main() {
         // - If arg is anything else, then call the count() function, passing "arg" to it.
         if arg == "sum".to_string() {
             sum();
-        } else if arg == "double".to_string() {
+        } else if arg == String::from("double") {
             double();
         } else {
             count(arg);
