@@ -63,8 +63,14 @@ fn count(arg: String) {
     // Challenge: Use an unconditional loop (`loop`) to print `arg` 8 times, and then break.
     // You will need to count your loops, somehow.  Run it with `cargo run bananas`
     //
-    // print!("{} ", arg); // Execute this line 8 times, and then break. `print!` doesn't add a newline.
-
+    let mut i = 1;
+    loop {
+        print!("{} {} \n", arg, i); // Execute this line 8 times, and then break. `print!` doesn't add a newline.
+        i += 1;
+        if i >= 9 {
+            break;
+        }     
+    }
 
     println!(); // This will output just a newline at the end for cleanliness.
 }
