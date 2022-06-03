@@ -37,14 +37,7 @@ fn main() {
         println!("Not bananas");
     }
 
-    fn eat(x: String) -> bool {
-        if x.starts_with("b") && x.contains("a"){
-            true
-        } else {
-            false
-        }
 
-    }
 
     // Try running this program with "boat", "banana", and "grapes" as the arguments :-)
 
@@ -52,6 +45,15 @@ fn main() {
     // dereferences them and adds them together, and returns the result.
     //
     // println!("1 + 2 = {}, even via references", add(&1, &2));
+}
+
+fn eat(x: String) -> bool {
+    if x.starts_with("b") && x.contains("a"){
+        true
+    } else {
+        false
+    }
+
 }
 
 fn change(x: &mut String) {
