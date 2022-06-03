@@ -15,21 +15,16 @@ fn main() {
     // String reference
     //
     inspect(&arg);
-    fn inspect(x: &str){
-        if x.ends_with("s"){
-            println!("is plural");
-        } else {
-            println!("is singular");    
-        }
 
-    }
 
     // 2. Write a function `change` that takes a *mutable* reference to a String and adds an "s" to
     // the String if it doesn't already end with "s". Then uncomment and run the code below with
     // `cargo run apple`.  Hint: use `.push_str("s")` on the mutable String reference to add an "s".
     //
-    //change(&mut arg);
-    //println!("I have many {}", arg);
+    change(&mut arg);
+    println!("I have many {}", arg);
+
+
 
     // 3. Write a function `eat` that accepts ownership of (consumes) a String and returns a bool
     // indicating whether or not the String both starts with a "b" AND contains an "a".
@@ -48,4 +43,19 @@ fn main() {
     // dereferences them and adds them together, and returns the result.
     //
     // println!("1 + 2 = {}, even via references", add(&1, &2));
+}
+
+fn change(x: &mut String) {
+    if !x.ends_with("s") {
+        x.push_str("s");
+    }
+}
+
+fn inspect(x: &str){ //or &String?
+    if x.ends_with("s"){
+        println!("{} is plural", x);
+    } else {
+        println!("{} is singular", x);    
+    }
+
 }
