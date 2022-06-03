@@ -31,11 +31,20 @@ fn main() {
     // Hint 1: use `.starts_with("b")` and `.contains("a")`
     // Hint 2: `&&` is the boolean "AND" operator
     //
-    //if eat(arg) {
-    //    println!("Might be bananas");
-    //} else {
-    //    println!("Not bananas");
-    //}
+    if eat(arg) {
+        println!("Might be bananas");
+    } else {
+        println!("Not bananas");
+    }
+
+    fn eat(x: String) -> bool {
+        if x.starts_with("b") && x.contains("a"){
+            true
+        } else {
+            false
+        }
+
+    }
 
     // Try running this program with "boat", "banana", and "grapes" as the arguments :-)
 
