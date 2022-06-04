@@ -44,11 +44,15 @@ fn main() {
     // Challenge: Write a function "add" that takes *references* to two integer arguments,
     // dereferences them and adds them together, and returns the result.
     //
-    // println!("1 + 2 = {}, even via references", add(&1, &2));
+    //println!("1 + 2 = {}, even via references", add(1, 2));
+
+    
+
 }
 
+
 fn eat(x: String) -> bool {
-    if x.starts_with("b") && x.contains("a") //returns bool value
+    x.starts_with("b") && x.contains("a") //returns bool value
 }
 
 fn change(x: &mut String) {
