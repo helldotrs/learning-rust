@@ -19,6 +19,8 @@ fn main() {
     //Lifetimes --> references must always be valid --> compiler wont let you create a reference that will outlive the data it is referencing & you can never point to Null
 
     y = add_three(&mut y); //passes mutable reference
+
+    // dot operators takes values and deference them 
     
 }
 
