@@ -11,9 +11,12 @@ fn main() {
     //(a clone might in other languages be refered to as "a deep copy")
 
     y = add_one(y); //once var is sent to func var is dropped: unusuall but valid solution, normally you'd use a value.
-    // y == 3;
+    // y --> 3;
 
-    
+    y = add_two(&y); //& means we pass a reference, rather than ownership of value 
+    // y --> 5   
+
+    //Lifetimes --> references must always be valid --> compiler wont let you create a reference that will outlive the data it is referencing & you can never point to Null
 
     
 }
@@ -22,4 +25,7 @@ fn add_one (a: String) -> String{
     a + 1
 }
 
+fn add_two (a: &String){
+    y + 2
+}
 
