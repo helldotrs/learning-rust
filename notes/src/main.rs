@@ -18,6 +18,7 @@ fn main() {
 
     //Lifetimes --> references must always be valid --> compiler wont let you create a reference that will outlive the data it is referencing & you can never point to Null
 
+    y = add_three(&mut y); //passes mutable reference
     
 }
 
@@ -25,7 +26,10 @@ fn add_one (a: String) -> String{
     a + 1
 }
 
-fn add_two (a: &String){
+fn add_two (a: &String){ //reference is immutable even two value it reference to is mutable.
     y + 2
 }
 
+fn add_three(a: &mut String){
+    y + 3
+}
