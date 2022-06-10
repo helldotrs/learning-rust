@@ -17,6 +17,15 @@ fn main() {
     let mut my_first_hash_map: Hashmap<u8, bool> = Hashmap::new(); 
     h.insert(5, true);
     h.insert(6, false);
+    
+    let have_five = my_first_hash_map.remove(&5).unwrap();
+
+    //VecDeque
+    //LinkedList
+    //HashSet //learn more
+    //BinaryHeap
+    //BTreeBap
+    //BTreeMap
 }
 
 
