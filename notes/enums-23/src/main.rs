@@ -17,4 +17,7 @@ fn main() {
         Things(String, i32),
         Place {x: i32, y: i32},
     }
+
+    use DispenserItem::*;
+    let item = Empty;
 }
