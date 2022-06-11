@@ -37,5 +37,9 @@ fn main() {
         None => {
             println!("no value");
         },
+        _ => { // _ is used for a default/anything else. all options must be explored when using "match" 
+            println!("who cares"); 
+        }
+        
     }
 }
