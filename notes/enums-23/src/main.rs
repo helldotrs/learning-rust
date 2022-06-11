@@ -31,7 +31,7 @@ fn main() {
     }
 
     match my_variable { //"match" handy when you want to handle all the variants at once
-        Some(x) => {
+        Some(x) => {  // => is called a double arrow
             println!("Value is {}", x);
         },
         None => {
