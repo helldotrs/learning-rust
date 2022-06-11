@@ -26,11 +26,11 @@ fn main() {
         None,
     }
 
-    if let Some(x) = my_variable { //handy if you care about one variant matches or not, but not if you want to handle all the variables at once
+    if let Some(x) = my_variable { //"if let" is handy if you care about one variant matches or not, but not if you want to handle all the variables at once
         println!("value is {}", x);
     }
 
-    match my_variable {
+    match my_variable { //"match" handy when you want to handle all the variants at once
         Some(x) => {
             println!("Value is {}", x);
         },
