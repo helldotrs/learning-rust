@@ -19,5 +19,23 @@ fn main() {
     }
 
     use DispenserItem::*;
-    let item = Empty;
+    let item = Empty; // let item = Ammo(69); //let item = Things("hat".to_string(), 7); // Place {x: 24, y: 48} 
+
+    enum Option<T> {
+        Some(t),
+        None,
+    }
+
+    if let Some(x) = my_variable {
+        println!("value is {}", x);
+    }
+
+    match my_variable {
+        Some(x) => {
+            println!("Value is {}", x);
+        },
+        None => {
+            println!("no value");
+        },
+    }
 }
