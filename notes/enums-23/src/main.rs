@@ -26,20 +26,33 @@ fn main() {
         None,
     }
 
-    if let Some(x) = my_variable { //"if let" is handy if you care about one variant matches or not, but not if you want to handle all the variables at once
+    if let Some(x) = my_variable {
         println!("value is {}", x);
     }
 
-    match my_variable { //"match" handy when you want to handle all the variants at once
-        Some(x) => {  // => is called a double arrow
+    match my_variable {
+        Some(x) => {
             println!("Value is {}", x);
         },
         None => {
             println!("no value");
         },
-        _ => { // _ is used for a default/anything else. all options must be explored when using "match" 
-            println!("who cares"); 
-        }
-        
+    }
+
+    //Option & Result
+    //Option
+    //let mut x: Option<i32> = None;
+    let mut x = None;
+    x = Some(5);
+    x.is_some(); // true
+    x.is_none(); // false
+    for i in x {
+        println!("{}", i) //prints 5
+    }
+    //Result
+    #[must_use]
+    enum Result<T, E> {
+        Ok(T),
+        Err(E),
     }
 }
