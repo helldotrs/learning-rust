@@ -9,6 +9,11 @@
 // - `Miss`
 //
 // You will need to complete 1b as well before you will be able to run this program successfully.
+enum Shot{
+    Bullseye,
+    Hit(f64),
+    Miss,
+}
 
 impl Shot {
     // Here is a method for the `Shot` enum you just defined.
