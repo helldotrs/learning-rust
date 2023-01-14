@@ -10,6 +10,7 @@ fn main() {
     let _c: bool    = true; // boolean // _ for unused variable
     let test_value  = 40;
     let tv          = &test_value; //fixme - come back to this.
+    let mut i       = 0;
 
 
     println!("Hello, world!");
@@ -27,6 +28,17 @@ fn main() {
     }
     else {
         println!("a is less than {}", test_value)
+    }
+
+    loop {
+        i += 1;
+        
+        if i > test_value {
+            break;
+        }
+        
+        println!("Value of i is {}", i);
+
     }
 
 
