@@ -1,4 +1,6 @@
 fn main() {
+
+    // what is used for % in Rust?
     //single line comment
     /*
     multi line comment
@@ -32,11 +34,15 @@ fn main() {
 
     loop {
         i += 1;
+
+        if i == 10 {
+            continue;
+        }
         
         if i > test_value {
             break;
         }
-        
+
         println!("Value of i is {}", i);
 
     }
