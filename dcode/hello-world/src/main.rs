@@ -10,7 +10,7 @@ fn main() {
                             // u64 for "unsigned 64 bit integer" does not support negative numbers
     let _b          = 4.5;  // f32 - f for float
     let _c: bool    = true; // boolean // _ for unused variable
-    let test_value  = 40;
+    let test_value  = 20;
     let tv          = &test_value; //fixme - come back to this.
     let mut i       = 0;
 
@@ -45,6 +45,18 @@ fn main() {
 
         println!("Value of i is {}", i);
 
+    }
+    i = 0;
+
+    while i <= test_value {
+        i += 1;
+
+
+        if i % 5 == 0 {
+            println!("{}", i);
+        }
+
+        
     }
 
 
