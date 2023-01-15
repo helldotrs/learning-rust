@@ -108,9 +108,13 @@ fn main() {
 
     }
 
-    for n in 1..MAXIMUM_NUMBER{
+    for n in 1..MAXIMUM_NUMBER{ //non-inclusive, ea 1-19
         println!("{}", n);
     }
+
+    let tup1 = (20, 25, 30, 35); //tuple
+
+    println!("{}", tup1.0); //prints first value of tuple tup1, ea 20
 
 
 
