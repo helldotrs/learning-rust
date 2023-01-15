@@ -121,9 +121,16 @@ fn main() {
     println!("{}", (tup1.7).0);
     println!("{}", mac);
 
+    print_number_to(5);
 
 
 
 
 
+}
+
+fn print_number_to(num: u32){
+    for n in 1..num { //non-inclusive 
+        println!("{}", n);
+    }
 }
