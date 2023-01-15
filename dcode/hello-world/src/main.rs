@@ -123,7 +123,29 @@ fn main() {
 
     print_number_to(5);
 
+    if is_even(2){
+        println!("even");
+    } else {
+        println!("uneven");
+    }
 
+    if is_even(5){
+        println!("even");
+    } else {
+        println!("uneven");
+    }
+
+    if is_even_short_version(2){
+        println!("even");
+    } else {
+        println!("uneven");
+    }
+
+    if is_even_short_version(5){
+        println!("even");
+    } else {
+        println!("uneven");
+    }
 
 
 
@@ -133,4 +155,12 @@ fn print_number_to(num: u32){
     for n in 1..num { //non-inclusive 
         println!("{}", n);
     }
+}
+
+fn is_even(num: u32) -> bool { //excepts single number, returns boolean
+    return num % 2 == 0; 
+}
+
+fn is_even_short_version(num: u32) -> bool { //excepts single number, returns boolean
+    num % 2 == 0 //no need for "return" if you leave out the ;
 }
