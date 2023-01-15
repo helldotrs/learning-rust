@@ -1,3 +1,12 @@
+enum Direction{
+    Up,
+    Down,
+    Left, 
+    Right
+}
+
+const MAXIMUM_NUMBER: u8 = 20; //should be global? //constants need to have type declared 
+
 fn main() {
 
     // what is used for % in Rust?
@@ -78,6 +87,31 @@ fn main() {
     for (index, a) in animals.iter().enumerate() {//local a for animals  //using iter() method prevents ownership of the vector to being moved to the for-loop //enumerate() to find out index values?
         println!("{} is an animal, index: {}", a, index);
     }
+
+    let player_direction:Direction = Direction::Up; //variable_name:Type (enum) = Type::varient (of type);
+
+    match player_direction{ //match works like switch in other languages
+        Direction::Up       => println!("we are heading up!"),
+        Direction::Down     => println!("we are heading down!"),
+        Direction::Left     => println!("we are heading left!"),
+        Direction::Right    => println!("we are heading right!"),
+
+    }
+
+    let player_direction:Direction = Direction::Down; //variable_name:Type (enum) = Type::varient (of type);
+
+    match player_direction{ //match works like switch in other languages
+        Direction::Up       => println!("we are heading up!"),
+        Direction::Down     => println!("we are heading down!"),
+        Direction::Left     => println!("we are heading left!"),
+        Direction::Right    => println!("we are heading right!"),
+
+    }
+
+    for n in 1..MAXIMUM_NUMBER{
+        println!("{}", n);
+    }
+
 
 
 
