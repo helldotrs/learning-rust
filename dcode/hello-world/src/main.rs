@@ -75,8 +75,8 @@ fn main() {
     
     println!("global i var is still {}", i);
 
-    for a in animals.iter() {//local a for animals  //using iter() method prevents ownership of the vector to being moved to the for-loop
-        println!("{} is an animal", a);
+    for (index, a) in animals.iter().enumerate() {//local a for animals  //using iter() method prevents ownership of the vector to being moved to the for-loop //enumerate() to find out index values?
+        println!("{} is an animal, index: {}", a, index);
     }
 
 
