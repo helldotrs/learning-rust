@@ -112,9 +112,10 @@ fn main() {
         println!("{}", n);
     }
 
-    let tup1 = (20, 25, 30, 35); //tuple
+    let tup1 = (20, 25, 30, 35, "Rust", 3.14, false); //tuple //can hold different value types
 
-    println!("{}", tup1.0); //prints first value of tuple tup1, ea 20
+    println!("tup1 first value: {}", tup1.0); //prints first value of tuple tup1, ea 20
+    println!("tup1 7th value: {}", tup1.6); //prints first value of tuple tup1, ea 20 
 
 
 
