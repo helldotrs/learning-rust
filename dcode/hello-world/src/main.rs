@@ -146,6 +146,19 @@ fn main() {
     } else {
         println!("uneven");
     }
+    
+    let mut ab1 = 10;
+    //let ab2 = &ab1;
+    let ab3 = &mut ab1;
+
+    *ab3 += 35;
+
+    //println!("ab1 {}", ab1);
+    //println!("ab2 {}", ab2);
+    println!("ab3 {}", ab3);
+    
+    //read up on mutable and immutable borrowing
+    
 
 
 
