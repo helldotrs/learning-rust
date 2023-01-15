@@ -13,6 +13,7 @@ fn main() {
     let test_value  = 20;
     let tv          = &test_value; //fixme - come back to this.
     let mut i       = 0;
+    let animals     = vec!["Rabbit", "Shark", "Cat"];
 
 
     println!("Hello, world!");
@@ -56,8 +57,30 @@ fn main() {
             println!("{}", i);
         }
 
+        // can use break and continue in while loop
+
         
     }
+    i = 0;
+
+    for i in 1..11 {
+        println!("The number is {}", i);
+    }
+
+    let test_range = 30..51; //non-exclusive, hence 30-50
+
+    for i in  test_range{
+        println!("range {}", i);
+    }
+    
+    println!("global i var is still {}", i);
+
+    for a in animals.iter() {//local a for animals  //using iter() method prevents ownership of the vector to being moved to the for-loop
+        println!("{} is an animal", a);
+    }
+
+
+
 
 
 }
