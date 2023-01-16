@@ -1,5 +1,5 @@
 struct Color {
-    red: u8,
+    red: u8, // u8  -> 0-255
     green: u8,
     blue: u8
 }
