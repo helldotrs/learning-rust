@@ -23,5 +23,13 @@ fn main(){
 
     println!("red: {}, {}, {}", red.0, red.1, red.2);
 
+    print_color(&bg); //if we do not do this by reference the value of bg will be passed to the function hence we wont be able to run this twice
 
+
+
+
+}
+
+fn print_color(c: &Color){
+    println!("{}, {}, {}", c.red, c.green, c.blue);
 }
