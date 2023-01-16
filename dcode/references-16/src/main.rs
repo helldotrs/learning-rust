@@ -1,6 +1,12 @@
 fn main() {
     let mut a = 10;
-    let ar = &a;
+    //let ar = &a;
 
-    println!("a is {}", ar)
+    {
+        let ar2 = &mut a;
+
+        *ar2 += 1;
+    }
+
+    println!("a is {}", a)
 }
