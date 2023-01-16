@@ -5,7 +5,11 @@ struct Color {
 }
 
 fn main(){
-    let bg = Color { red: 225, green: 70, blue: 15};
+    let mut bg = Color { red: 225, green: 70, blue: 15};
+
+    println!("bg: {}, {}, {}", bg.red, bg.green, bg.blue)
+
+    bg.blue = 45;
 
     println!("bg: {}, {}, {}", bg.red, bg.green, bg.blue)
 }
