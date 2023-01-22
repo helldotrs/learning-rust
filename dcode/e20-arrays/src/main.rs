@@ -30,8 +30,8 @@ fn main(){
 
     println!("{}", numbers[0]); 
 
-    for n in numbers.iter() { //interesting.
-        println!("{}", n);
+    for i in numbers.iter() { //interesting.
+        println!("{}", i);
     }
 
     println!("-");
@@ -46,6 +46,14 @@ fn main(){
     }
     println!(" ");
     println!("{}", numbers_more[0]);
+
+    let array_with_default_of_two_repeated_ten_times = [2; 10];
+
+    println!("");
+    for n in 0..array_with_default_of_two_repeated_ten_times.len(){
+        print!("{}, ", array_with_default_of_two_repeated_ten_times[n]);
+    }
+    println!("");
 
 
 
