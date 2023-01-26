@@ -14,4 +14,5 @@ fn main() {
     for element in my_vector.iter(){
         println!("{}", element);
     }
+    //vecotrs --> powerful --> look at rust documentation
 }
