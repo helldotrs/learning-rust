@@ -33,4 +33,5 @@ fn main() {
     };
     
     println!("{} can speak: {}", person.name, person.can_speak());
+    person.speak();
 }
