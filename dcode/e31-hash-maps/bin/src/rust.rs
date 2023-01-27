@@ -10,4 +10,12 @@ fn main() {
     grades.insert("Bash Programming", 92);
 
     println!("number of subjects: {}", grades.len());
+    
+
+    match grades.get("Rust Programming"){
+        Some(grades) => println!("Rust prog: {}", grades), //some, if we find grades for Rust Programming
+        None => println!("Rust prog: non")
+    }
+
+
 }
