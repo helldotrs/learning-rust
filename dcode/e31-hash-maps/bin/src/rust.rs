@@ -20,8 +20,10 @@ fn main() {
     grades.remove("Python Programming");
 
     for (subject, grade) in &grades{
-        println("in {} you got {}", subject, grade);
+        println!("in {} you got {}", subject, grade);
     }
+
+    println!("Studied Goland: {}", grades.contains_key("Goland Programming"));
 
 
 }
