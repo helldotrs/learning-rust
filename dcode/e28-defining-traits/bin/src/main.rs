@@ -9,23 +9,28 @@ trait HasVoiceBox {
     // Speak
     fn speak(&self);
     // Check if can speak
-    fn can speak(&self) --> bool;
+    fn can_speak(&self) -> bool;
+}
+
+impl HasVoiceBox for Person{
+    fn speak(&self){
+       println!("Hello my name is {}", self.name); 
+    }
+
+    fn can_speak(&self) -> bool {
+        if self.age > 0 {
+            true
+        } else {
+            false
+        }
+    }
 }
 
 fn main() {
-
-    impl HasVoiceBox for Person{
-        fn speak(&self){
-           println!("Hello my name is {}", self.name); 
-        }
-
-        fn can_speak(&self) --> bool {
-            if self.age > 0 {
-                true
-            } else {
-                false
-            }
-        }
-    }
-    println!("Hello, world!");
+    let person = Person {
+        name: String::from("Bob"),
+        age: 41
+    };
+    
+    println!("{} can speak: {}", person.name, person.can_speak());
 }
