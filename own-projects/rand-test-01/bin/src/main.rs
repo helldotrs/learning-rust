@@ -8,7 +8,7 @@ fn main() {
     let mut num3    = 0;
 
     let mut i       = 0;
-    while i < 1000000 {
+    while i < 1000000 { // 1 000 000
         match rand::thread_rng().gen_range(1..4){
             1 => num1 = num1 + 1,
             2 => num2 = num2 + 1,
@@ -16,7 +16,9 @@ fn main() {
             _ => break
         }
 
+        println!("{}, {}, {}", num1, num2, num3);
         i = i + 1;
     }
+    println!("final:");
     println!("{}, {}, {}", num1, num2, num3);
 }
