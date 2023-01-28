@@ -13,5 +13,14 @@ fn main() {
         for line in my_string.lines(){
             print!("[ {} ]", line);
         }
+        
+        println!("");
+    }
+
+    {
+        let my_string = String::from("Rust is the best!");
+        let tokens: Vec<&str> = my_string.split(" ").collect(); //.split --> iterator, .collect converts to vector
+        
+        println!("index 3: {}", tokens[3]);
     }
 }
