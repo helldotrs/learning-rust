@@ -37,6 +37,16 @@ fn main() {
         print!("trim:{} ", my_string.trim());
         println!("/end");
 
-        println!("[conclusion on .trim() \nremoves all white spaces in front,\nall but one at the end,\nand non in the middle.]");
+        println!("\n[conclusion on .trim() \nremoves all white spaces in front,\nall but one at the end,\nand non in the middle.]\n");
+    }
+
+    {
+        let my_string = String::from("Rust is the best!");
+
+        //can not just my_string[5] in Rust.
+        match my_string.chars().nth(3){//what is nth short for?
+            Some(char_var)  => println!("index 3 is: {}", char_var), //Some and None with UpperCamelCase
+            None            => println!("no char found at index 3")
+        } 
     }
 }
