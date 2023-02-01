@@ -9,4 +9,11 @@ mod my_tests{
         assert!(1 == 1); // ! - macro?
         panic!("Oh no!");
     }
+
+    #[test]
+    fn test_equals(){
+        assert_eq!(2, 1 + 1);
+        assert_ne!(2, 1 + 2);
+    }
+
 }
