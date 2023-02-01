@@ -2,8 +2,8 @@ fn main() {
     println!("Hello, world!");
 }
 
-fn give_two() => i31 {
-
+fn give_two() -> i32 {
+    2
 }
 
 #[cfg(test)]
@@ -24,7 +24,7 @@ mod my_tests{
 
     #[test]
     fn test_outside_fn(){
-        assert_eq(2, give_two());
+        assert_eq!(2, super::give_two());
     }
 
 }
