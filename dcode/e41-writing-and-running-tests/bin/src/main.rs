@@ -11,6 +11,7 @@ mod my_tests{
     }
 
     #[test]
+    #[ignore]
     fn test_equals(){
         assert_eq!(2, 1 + 1);
         assert_ne!(2, 1 + 2);
