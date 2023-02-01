@@ -5,6 +5,7 @@ fn main() {
 mod my_tests{
     #[test]
     fn test_basic(){
-        assert!(1 == 1); // ! means macro?
+        assert!(1 == 1); // ! - macro?
+        panic!("Oh no!");
     }
 }
