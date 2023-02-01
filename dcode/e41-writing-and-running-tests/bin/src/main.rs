@@ -1,3 +1,14 @@
+struct Rectangel{
+    width: u8,
+    height: u8
+}
+
+impl Rectangel{
+    fn is_square(&self) -> bool{
+        self.width == self.height
+    }
+}
+
 fn main() {
     println!("Hello, world!");
 }
@@ -25,6 +36,17 @@ mod my_tests{
     #[test]
     fn test_outside_fn(){
         assert_eq!(2, super::give_two());
+    }
+
+    #[test]
+    #[should_panic]
+    fn test_structs(){
+        let a = super::Rectangel {
+            width: 50,
+            height: 15
+        };
+
+        assert!(a.is_square());
     }
 
 }
