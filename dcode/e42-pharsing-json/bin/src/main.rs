@@ -5,7 +5,7 @@ use serde_json::Value as JsonValue;
 fn main() {
     let json_str = r#"
         {
-            "name": "Domenic",
+            "name": "Domenic", 
             "age": 65,
             "is_male": true
         }
