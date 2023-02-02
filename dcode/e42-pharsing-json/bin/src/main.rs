@@ -10,5 +10,9 @@ fn main() {
             "is_male": true
         }
     "#; // Rust raw-string
+
+    let res = serde_json::from_str(json_str);
+
+
     println!("Hello, world!");
 }
