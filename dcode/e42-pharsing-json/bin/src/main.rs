@@ -13,6 +13,10 @@ fn main() {
 
     let res = serde_json::from_str(json_str);
 
+    if res.is_ok(){
+        let p: JsonValue = res.unwrap();
+    }
+
 
     println!("Hello, world!");
 }
