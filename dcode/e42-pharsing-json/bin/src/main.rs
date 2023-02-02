@@ -5,7 +5,7 @@ use serde_json::Value as JsonValue;
 fn main() {
     let json_str = r#"
         {
-            "name": "Domenic":,
+            "name": "Domenic",
             "age": 65,
             "is_male": true
         }
@@ -15,6 +15,9 @@ fn main() {
 
     if res.is_ok(){
         let p: JsonValue = res.unwrap();
+        println!("The name is {}", p["name"]);
+    } else {
+        println!("could not parse JSON");
     }
 
 
