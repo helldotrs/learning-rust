@@ -1,14 +1,14 @@
 use std::Fs::File;
 use std::io::prelude::*;
 
-let file_name = String::from("words.txt");
+const file_name: String = String::from("words.txt");
 
 
 
 
 fn main() {
     let selected_word = select_word();
-    println!("Hello, world!");
+    println!("Selected word was: {}", selected_word);
 }
 
 
@@ -32,7 +32,7 @@ fn select_word() -> String {
 
     // generate random index
     let random_index = rand::thread_rng()
-        .get_range(0, available_words.len());
+        .gen_range(0, available_words.len());
 
     return String::from(available_words[random_index]);
     
