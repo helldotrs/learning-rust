@@ -1,5 +1,6 @@
-extern rand;
+//extern rand;
 
+use rand::Rng;
 use std::io; // io --> input/output
 
 fn main() {
