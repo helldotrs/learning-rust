@@ -1,3 +1,4 @@
+//bookmark: Next, we’re adding two lines in the middle. In the first line, we call the
 //extern rand;
 
 use rand::Rng;
