@@ -1,4 +1,4 @@
-//bookmark: Next, we’re adding two lines in the middle. In the first line, we call the
+//bookmark: method will only work on characters that can logically be converted into numbers and so can easily cause errors. If, for example, the string contained 
 //extern rand;
 
 use rand::Rng;
