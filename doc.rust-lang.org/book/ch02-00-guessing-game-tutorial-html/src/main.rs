@@ -2,7 +2,7 @@
 //extern rand;
 
 use rand::Rng;
-use std::io; // io --> input/output
+use std::{io, cmp::Ordering}; // io --> input/output
 
 fn main() {
     println!("Guess the number!");
@@ -10,7 +10,7 @@ fn main() {
     let secret_number = rand::thread_rng().gen_range(1..=100);
 
     println!("The secret number is: {secret_number}");
-
+ 
     println!("Please input your guess.");
 
     let mut guess = String::new();
@@ -23,6 +23,12 @@ fn main() {
         .expect("Failed to read line");
 
     println!("You guessed: {guess}");
+
+    guess.cmp(&secret_number){
+        Ordering::Less      => println!("Too small!"),
+        Ordering::Greater   => println!("Too big!"),
+        Ordering::Equal     => println!("U r winrar!"),
+    }
 
 
 
