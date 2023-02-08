@@ -2,7 +2,9 @@
 //extern rand;
 
 use rand::Rng;
+//was going to add "use std::cmp::Ordering;"" here but the analyzer modified the following line instead:
 use std::{io, cmp::Ordering}; // io --> input/output
+
 
 fn main() {
     println!("Guess the number!");
@@ -21,15 +23,18 @@ fn main() {
     io::stdin()
         .read_line(&mut guess)
         .expect("Failed to read line");
+    
+    let guess: u32 = guess.trim().parse().expect("Please type a number!");
+    //u32 --> small positive number.
 
     println!("You guessed: {guess}");
 
-    guess.cmp(&secret_number){
+    match guess.cmp(&secret_number){ //The cmp method compares two values and can be called on anything that can be compared. 
         Ordering::Less      => println!("Too small!"),
         Ordering::Greater   => println!("Too big!"),
-        Ordering::Equal     => println!("U r winrar!"),
-    }
-
+        Ordering::Equal     => println!("U r winrar!")
+    } //the Ordering type is another enum and has the variants Less, Greater, and Equal
+    //The match expression ends after the first successful match
 
 
 }
