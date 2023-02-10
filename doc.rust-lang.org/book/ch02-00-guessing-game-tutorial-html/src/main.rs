@@ -33,7 +33,10 @@ fn main() {
         match guess.cmp(&secret_number){ //The cmp method compares two values and can be called on anything that can be compared. 
             Ordering::Less      => println!("Too small!"),
             Ordering::Greater   => println!("Too big!"),
-            Ordering::Equal     => println!("U r winrar!")
+            Ordering::Equal     => {
+                println!("U r winrar!");
+                break;
+            },
         } //the Ordering type is another enum and has the variants Less, Greater, and Equal
         //The match expression ends after the first successful match
     }
