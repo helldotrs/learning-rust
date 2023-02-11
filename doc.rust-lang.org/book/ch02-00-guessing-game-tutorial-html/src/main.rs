@@ -1,4 +1,4 @@
-//bookmark: method will only work on characters that can logically be converted into numbers and so can easily cause errors. If, for example, the string contained 
+//bookmark: expression to move from crashing on an error to handling the error. Remember that
 //extern rand;
 
 use rand::Rng;
@@ -25,6 +25,7 @@ fn main() {
             .read_line(&mut guess)
             .expect("Failed to read line");
         
+        //let guess: u32 = guess.trim().parse().expect("Please type a number!");
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
