@@ -32,6 +32,7 @@ fn main() {
         };
         //u32 --> small positive number.
         //Result [type] is an enum that has the variants Ok and Err
+        //.parse() here turns the String into a u32
 
         println!("You guessed: {guess}");
 
