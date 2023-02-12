@@ -31,6 +31,7 @@ fn main() {
             Err(_) => continue,
         };
         //u32 --> small positive number.
+        //Result [type] is an enum that has the variants Ok and Err
 
         println!("You guessed: {guess}");
 
