@@ -9,4 +9,5 @@ fn main() {
     
     //rust tuple: fixed length, can contain different data types
     //rust array: fixed length, must contain same data type
+    //rust vector: flexible length, 
 }
