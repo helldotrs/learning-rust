@@ -9,5 +9,6 @@ fn main() {
     
     //rust tuple: fixed length, can contain different data types ()
     //rust array: fixed length, must contain same data type []
+        //"An array is a single chunk of memory of a known, fixed size that can be allocated on the stack. "
     //rust vector: flexible length, 
 }
