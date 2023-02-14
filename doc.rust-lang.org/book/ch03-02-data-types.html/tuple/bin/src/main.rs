@@ -7,7 +7,7 @@ fn main() {
 
     println!("first element is {}", tup.0);
     
-    //rust tuple: fixed length, can contain different data types
-    //rust array: fixed length, must contain same data type
+    //rust tuple: fixed length, can contain different data types ()
+    //rust array: fixed length, must contain same data type []
     //rust vector: flexible length, 
 }
