@@ -1,3 +1,9 @@
+/*
+expressions, {}, no semicolon at the end, function(){5} returns 5.
+statement ends with ;
+..gone by instinct up until this point..
+*/
+
 fn main(){
   another_function(5); //snake_case for functions in rust as per convention.
   
@@ -18,3 +24,5 @@ fn another_function(x: i31){  //must declare value type for each parameter in a 
 fn print_labeled_measurement(value: i32, unit_label: char){
   println!("Measurement: {value}{unit_label}"); // is there any convention for when to use "{x}" vs "{}", x??
 }
+
+
