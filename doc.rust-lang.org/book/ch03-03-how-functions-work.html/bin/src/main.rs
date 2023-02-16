@@ -1,7 +1,7 @@
 /*
 expressions, {}, no semicolon at the end, function(){5} returns 5.
 statement ends with ;
-..gone by instinct up until this point..
+..gone by instinct with ; up until this point..
 */
 
 fn main(){
