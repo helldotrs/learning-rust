@@ -1,7 +1,8 @@
 /*
-expressions, {}, no semicolon at the end, function(){5} returns 5.
-statement ends with ;
-..gone by instinct with ; up until this point..
+-expressions, {}, no semicolon at the end, function(){5} returns 5.
+  macros (ea. println!)??
+-statement ends with ;
+-..gone by instinct with ; up until this point..
 */
 
 fn main(){
