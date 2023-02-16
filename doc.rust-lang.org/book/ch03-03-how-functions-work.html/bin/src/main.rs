@@ -1,3 +1,15 @@
+/* only mention of multi-lines in "Comments" is:
+For comments that extend beyond a single line, you’ll need to include // on each line, like this:
+
+// So we’re doing something complicated here, long enough that we need
+// multiple lines of comments to do it! Whew! Hopefully, this comment will
+// explain what’s going on.
+
+
+-why?
+src: https://doc.rust-lang.org/book/ch03-04-comments.html
+*/
+
 /*
 -expressions, {}, no semicolon at the end, function(){5} returns 5.
   macros (ea. println!)??
