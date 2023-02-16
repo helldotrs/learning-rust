@@ -14,6 +14,12 @@ fn main(){
     println!("yay! :D");
   }
   scope_test();
+  
+  fn get_five() -> i32 {
+  5 // without return and ; only if in the end of the function/expression?
+  }
+  let five = get_five();
+  println!("{five}");
  
   
 }
@@ -25,5 +31,7 @@ fn another_function(x: i31){  //must declare value type for each parameter in a 
 fn print_labeled_measurement(value: i32, unit_label: char){
   println!("Measurement: {value}{unit_label}"); // is there any convention for when to use "{x}" vs "{}", x??
 }
+
+
 
 
