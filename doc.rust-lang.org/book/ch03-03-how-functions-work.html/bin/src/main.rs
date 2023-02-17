@@ -32,6 +32,15 @@ fn main(){
   }
   let five = get_five();
   println!("{five}");
+  
+  // controll flow:
+  let number = 3;
+
+  if number < 5 {
+      println!("condition was true");
+  } else {
+      println!("condition was false");
+  }
  
   
 }
