@@ -8,4 +8,9 @@ fn main() {
     
     //the return value has to be the same type, hence following wont compile:
     //let number = if condition { 5 } else { "six" };
+    
+    // infinity loop:
+    loop {
+        println("!");
+    }
 }
