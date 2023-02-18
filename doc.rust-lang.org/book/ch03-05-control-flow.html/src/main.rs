@@ -11,6 +11,6 @@ fn main() {
     
     // infinity loop:
     loop {
-        println("!");
+        println("ctrl-c to exit");
     }
 }
