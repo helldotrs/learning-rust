@@ -6,6 +6,6 @@ fn main() {
     let number = if condition { 5 } else { 6 };
     println!("The value of number is: {number}");
     
-    //the return value has to be the same type, hence this wont compile:
+    //the return value has to be the same type, hence following wont compile:
     //let number = if condition { 5 } else { "six" };
 }
