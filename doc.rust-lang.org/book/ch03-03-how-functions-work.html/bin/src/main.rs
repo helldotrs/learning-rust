@@ -42,6 +42,12 @@ fn main(){
   } else {
       println!("condition was false");
   }
+  
+  
+  
+   //Unlike languages such as Ruby and JavaScript, Rust will not automatically try to convert non-Boolean types to a Boolean.
+   //instead of: if number {}
+   //use: if number != 0 {}
  
   
 }
