@@ -37,7 +37,8 @@ fn main(){
   let number = 3;
 
   if number < 5 {
-      println!("condition was true");
+      println!("condition was true");  
+       // Blocks of code associated with the conditions in if expressions are sometimes called arms
   } else {
       println!("condition was false");
   }
