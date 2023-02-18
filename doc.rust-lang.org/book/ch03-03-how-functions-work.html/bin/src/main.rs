@@ -50,6 +50,9 @@ fn main(){
    //use: if number != 0 {}
    
    //else if written: else if
+   /* 
+   Using too many else if expressions can clutter your code, so if you have more than one, you might want to refactor your code. Chapter 6 describes a powerful Rust branching construct called match for these cases.
+   */
  
   
 }
