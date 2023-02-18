@@ -9,21 +9,20 @@ fn main() {
     //the return value has to be the same type, hence following wont compile:
     //let number = if condition { 5 } else { "six" };
     
+    
+    
+    let mut counter = 0;
+    let result = loop {
+        counter += 1;
+        if counter == 10 {
+            break counter * 2; //breaks loop AND returns value
+        }
+    };
+    println!("The result is {result}");
+    
     // infinity loop:
     loop {
         println("ctrl-c to exit");
     }
-    
-    let mut counter = 0;
-
-    let result = loop {
-        counter += 1;
-
-        if counter == 10 {
-            break counter * 2;
-        }
-    };
-
-    println!("The result is {result}");
 }
 }
