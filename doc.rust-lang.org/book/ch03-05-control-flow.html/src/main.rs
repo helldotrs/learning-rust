@@ -22,7 +22,7 @@ fn main() {
     
     //loop label
     let mut count = 0;
-    'counting_up: loop {
+    'counting_up: loop {  //loop labels begin with '
         println!("count = {count}");
         let mut remaining = 10;
 
@@ -32,7 +32,7 @@ fn main() {
                 break;
             }
             if count == 2 {
-                break 'counting_up;
+                break 'counting_up; //breaks outer loop / loop with label 'counting up.
             }
             remaining -= 1;
         }
