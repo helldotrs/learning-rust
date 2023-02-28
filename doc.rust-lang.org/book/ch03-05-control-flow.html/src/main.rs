@@ -49,5 +49,8 @@ fn main() {
 
         index += 1;
     }
+    for element in a { // faster than while < loop, and no risk of wrong value which cause panic!
+        println!("the value is: {element}");
+    }
 }
 }
