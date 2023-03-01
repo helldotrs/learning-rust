@@ -52,5 +52,7 @@ fn main() {
     for element in a { // faster than while < loop, and no risk of wrong value which cause panic!
         println!("the value is: {element}");
     }
-}
+    }
+    //The safety and conciseness of for loops make them the most commonly used loop construct in Rust.
+    
 }
