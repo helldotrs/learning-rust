@@ -54,5 +54,7 @@ fn main() {
     }
     }
     //The safety and conciseness of for loops make them the most commonly used loop construct in Rust.
+    //Even in situations in which you want to run some code a certain number of times, as in the countdown example that used a while loop in Listing 3-3, most Rustaceans would use a for loop. 
+    
     
 }
