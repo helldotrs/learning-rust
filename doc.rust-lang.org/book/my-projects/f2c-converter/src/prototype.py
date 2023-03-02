@@ -1,7 +1,8 @@
+
 def f2c(a): 
     a = a - 32
     a = a * 5
     a = a / 9
-    print(a)
+    return a
     
-f2c(100)
+print(f2c(100))
