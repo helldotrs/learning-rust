@@ -9,4 +9,8 @@ fn main() {
         a
     }
 
+    //FIXME: c2f
+    //fixme: take input
+    
+
 }
