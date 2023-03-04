@@ -1,4 +1,5 @@
 /* Code from ChatGPT, own comments will be in /// or  /** **/
+*/
 
 /*
 Writte me the source code for a celsius fahrenheit converter
