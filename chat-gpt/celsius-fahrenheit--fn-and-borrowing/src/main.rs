@@ -11,6 +11,7 @@ use std::io;
 // This function takes a temperature in Celsius as input and returns the corresponding temperature in Fahrenheit
 fn celsius_to_fahrenheit(celsius: &f32) -> f32 {
     celsius * 1.8 + 32.0
+    /// borrows the celcious value, and returns a value it has ownership of?
 }
 
 // This function takes a temperature in Fahrenheit as input and returns the corresponding temperature in Celsius
