@@ -8,7 +8,13 @@ fn main() {
     println!("please enter value to convert (c-->f & f-->c)");
     let mut input: string = String::new();
     io::stdin().read_line(&mut input).expect("failure to read input");
+    // we now have input var with string value from the input.
     
+    // now lets convert, or pharse, as a in integer (i32):
+    let input: i32 = match input.trim().parse() { //using .trim() every time we parse seems to be convention in rust - but is it really neccecary?
+        Ok(n) => n,
+        Err(_) => panic!("invalid input"), //sooooo neat that we always test and create a panic! in rust
+    }; 
     println!("Hello, world!");
 
     fn f2c --> f64 (a){  // FIXME: ref
