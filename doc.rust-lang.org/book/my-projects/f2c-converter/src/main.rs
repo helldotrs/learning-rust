@@ -17,15 +17,14 @@ fn main() {
     }; 
     println!("Hello, world!");
 
-    fn f2c --> f64 (a){  // FIXME: ref
+    
+}
+
+
+//non-main-functions:
+fn f2c --> f64 (a){  // FIXME: ref
         a = a - 32;
         a = a * 5;
         a = a / 9;
         a
     }
-
-    //FIXME: c2f
-    //fixme: take input
-    
-
-}
