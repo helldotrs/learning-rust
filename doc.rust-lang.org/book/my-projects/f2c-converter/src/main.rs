@@ -22,8 +22,8 @@ fn main() {
 
 
 //non-main-functions:
-fn int2float --> f64 (a){
-    //FIXME
+fn int2float --> f64 (i32: a){
+    a as f64
 }
 
 fn c2f --> f64 (a){
