@@ -22,17 +22,17 @@ fn main() {
 
 
 //non-main-functions:
-fn int2float --> f64 (i32: a){
+fn int2float(i32: a) --> f64 {
     a as f64
 }
 
-fn c2f --> f64 (a){
+fn c2f(a) --> f64 {
     a * 1.8; //same as a * 9/5
     a + 32;
     a //new line for clarity
 }
 
-fn f2c --> f64 (a){  // FIXME: ref
+fn f2c(a) --> f64 {  // FIXME: ref
         a = a - 32;
         a = a * 5;
         a = a / 9;
