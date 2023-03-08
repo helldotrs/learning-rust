@@ -27,8 +27,9 @@ fn int2float --> f64 (a){
 }
 
 fn c2f --> f64 (a){
-    //FIXME
-    //(°C x 1.8) + 32
+    a * 1.8; //same as a * 9/5
+    a + 32;
+    a //new line for clarity
 }
 
 fn f2c --> f64 (a){  // FIXME: ref
