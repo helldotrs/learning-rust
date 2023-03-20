@@ -14,4 +14,4 @@ owner out of scope --> value dropped
 string literal != String
 let s = String::from("hello"); //converts from string literal to String
 
-
+string literal --> immut
