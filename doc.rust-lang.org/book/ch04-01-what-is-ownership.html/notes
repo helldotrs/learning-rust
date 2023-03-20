@@ -1,2 +1,4 @@
 stack--> ordered, fixed datasize, "plate stack"
 heap--> find space, return pointer --> allocating on the heap --> allocating
+
+pointer to heap is down fixed size to can be store in the stack.
