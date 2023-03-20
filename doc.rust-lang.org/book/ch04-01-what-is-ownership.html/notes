@@ -5,3 +5,5 @@ pointer to heap is down fixed size to can be store in the stack.
 
 pushing to stack --> faster
 allocating to heap --> slower
+(hence why immut is standard?) 
+
