@@ -1,2 +1,2 @@
 stack--> ordered, fixed datasize, "plate stack"
-heap--> find space, return pointer --> allocating
+heap--> find space, return pointer --> allocating on the heap --> allocating
