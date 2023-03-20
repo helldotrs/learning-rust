@@ -28,3 +28,6 @@ let s1 = String::from("Hello");
 let s2 = s1.clone(); //clones value - memory heavy, but preserves s1
 
 
+//bookmark: bles that use it do not move, but rather are trivially copied, making them still valid after assignment to another variable.
+//https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
+
