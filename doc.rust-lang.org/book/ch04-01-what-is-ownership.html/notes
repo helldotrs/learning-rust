@@ -7,3 +7,5 @@ pushing to stack --> faster
 allocating to heap --> slower
 (hence why immut is standard?) 
 
+owner out of scope --> value dropped
+
