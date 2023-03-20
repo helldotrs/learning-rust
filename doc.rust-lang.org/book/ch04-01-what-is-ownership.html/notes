@@ -10,3 +10,8 @@ allocating to heap --> slower
 owner out of scope --> value dropped
 
 ?? primitive datatypes --> fixed size --> stack? 
+
+string literal != String
+let s = String::from("hello"); //converts from string literal to String
+
+
