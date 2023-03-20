@@ -9,3 +9,4 @@ allocating to heap --> slower
 
 owner out of scope --> value dropped
 
+?? primitive datatypes --> fixed size --> stack? 
