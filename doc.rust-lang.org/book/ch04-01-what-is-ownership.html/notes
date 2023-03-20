@@ -19,4 +19,8 @@ string literal --> immut, hardcoded at compile, fast & efficient
 let s1 = String::from("Hello");
 let s2 = s1; //drops s1 pointer to "Hello" as to avoid future "double free error"
   //??only with heap/complex data types?
+  //let s2 = s1; --> called a "move"
+print("{}", s1}; //will return error as pointer no longer exist.
+
+
 
