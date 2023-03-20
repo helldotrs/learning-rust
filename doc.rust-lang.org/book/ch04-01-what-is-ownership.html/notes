@@ -25,5 +25,6 @@ print("{}", s1}; //will return error as pointer no longer exist.
   tested in copy-and-move --> is true
 
 let s1 = String::from("Hello");
-let s2 = s1.clone(); //clones value - memory heavy.
+let s2 = s1.clone(); //clones value - memory heavy, but preserves s1
+
 
