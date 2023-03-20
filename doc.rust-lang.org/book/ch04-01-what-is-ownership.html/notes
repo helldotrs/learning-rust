@@ -24,3 +24,6 @@ print("{}", s1}; //will return error as pointer no longer exist.
 ??only with heap/complex data types?
   tested in copy-and-move --> is true
 
+let s1 = String::from("Hello");
+let s2 = s1.clone(); //clones value - memory heavy.
+
