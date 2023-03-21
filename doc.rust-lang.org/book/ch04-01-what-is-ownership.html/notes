@@ -35,3 +35,5 @@ general rule: any group of simple scalar valyes can impliment Copy. Examples:
 -tuples that only contain types that allow Copy
 --ok: (i32, i32), (i32, u32)(?)
 --not ok (i32, String)
+
+
