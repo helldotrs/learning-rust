@@ -27,7 +27,11 @@ print("{}", s1}; //will return error as pointer no longer exist.
 let s1 = String::from("Hello");
 let s2 = s1.clone(); //clones value - memory heavy, but preserves s1
 
-
-//bookmark: bles that use it do not move, but rather are trivially copied, making them still valid after assignment to another variable.
-//https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
-
+general rule: any group of simple scalar valyes can impliment Copy. Examples:
+-int, such as u32, i32(?)
+-bool
+-float, such as f64
+-char
+-tuples that only contain types that allow Copy
+--ok: (i32, i32), (i32, u32)(?)
+--not ok (i32, String)
