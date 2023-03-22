@@ -46,3 +46,8 @@ https://github.com/hellmak/learning-rust/blob/main/doc.rust-lang.org/book/ch04-0
   if you have a mutable reference to a value, you can have no other references to that value. 
 "
 
+    let r1 = &s; // no problem
+    let r2 = &s; // no problem
+    let r3 = &mut s; // BIG PROBLEM
+    
+    
