@@ -15,5 +15,6 @@ fn main() {
 }
 
 
+//just noticed I never set mutability on line 2 and that I shaddowed a scopewide variavle with the let keyword in line 11, making anything following it moot. however Docs talking about it now.
 
 
