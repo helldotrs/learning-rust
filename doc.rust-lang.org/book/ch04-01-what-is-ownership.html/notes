@@ -39,4 +39,6 @@ general rule: any group of simple scalar valyes can impliment Copy. Examples:
 super useful example pulled from the page-->
 https://github.com/hellmak/learning-rust/blob/main/doc.rust-lang.org/book/ch04-01-what-is-ownership.html/useful-example-code/ownership-and-functions01.rs
 
+&ref
+*deref
 
