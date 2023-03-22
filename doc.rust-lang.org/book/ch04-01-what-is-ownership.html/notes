@@ -57,3 +57,11 @@ https://github.com/hellmak/learning-rust/blob/main/doc.rust-lang.org/book/ch04-0
 
     let r3 = &mut s; // no problem
     println!("{}", r3);
+    
+fn no_dangle() -> String {
+    let s = String::from("hello");
+    
+    
+    s //works as it returns the value and moved it out of the function, while 
+    //&s would not as its a reference to a variable that has gone out of scope
+}
