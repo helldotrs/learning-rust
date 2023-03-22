@@ -42,3 +42,7 @@ https://github.com/hellmak/learning-rust/blob/main/doc.rust-lang.org/book/ch04-0
 &ref
 *deref
 
+"Mutable references have one big restriction: 
+  if you have a mutable reference to a value, you can have no other references to that value. 
+"
+
