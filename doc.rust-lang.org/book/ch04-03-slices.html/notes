@@ -10,8 +10,11 @@ let s = String::from("hello");
 let slice = &s[0..2]; // same as:
 let slice = &s[..2];
 
-let len = s.len();
+let len = s.len(); ((why not ref?)
 
 let slice = &s[3..len]; // same as:
 let slice = &s[3..];
+
+let slice = &s[0..len]; //entire string // same as:
+let slice = &s[..];
 ------
