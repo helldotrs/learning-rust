@@ -1,4 +1,4 @@
-
+a struct is like an object’s data attribute in Object Oriented languages.
 
 Note that the entire instance must be mutable; Rust doesn’t allow us to mark only certain fields as mutable. 
   As with any expression, we can construct a new instance of the struct as the last expression in the function body
