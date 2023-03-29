@@ -5,3 +5,7 @@ Note that the entire instance must be mutable; Rust doesn’t allow us to mark o
   to implicitly return that new instance.
 
 Read up more on string literal (&str) vs String
+
+fn first_word(s: &str)    -> &str { // can take but String and &str values
+fn first_word(s: String)  -> &str { // can not take &str (?)
+
