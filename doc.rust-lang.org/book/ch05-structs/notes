@@ -29,3 +29,4 @@ In Rust, a "string literal" and a "String" are two different ways of representin
 In summary, use string literals (&str) for fixed, read-only text, and String for text that needs to be changed or resized during program execution.
 -------
 
+is &str string literal or string slice?
