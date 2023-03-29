@@ -30,3 +30,5 @@ In summary, use string literals (&str) for fixed, read-only text, and String for
 -------
 
 is &str string literal or string slice?
+
+"[...] string literals *are* string slices already" ~Rust Doc
