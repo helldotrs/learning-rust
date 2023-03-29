@@ -8,4 +8,24 @@ Read up more on string literal (&str) vs String
 
 fn first_word(s: &str)    -> &str { // can take but String and &str values
 fn first_word(s: String)  -> &str { // can not take &str (?)
+-------
+&str vs String:
+In Rust, a "string literal" and a "String" are two different ways of representing text. Here's a simple explanation of their differences:
+
+    String Literal:
+
+    A sequence of characters enclosed in double quotes, like "Hello, world!"
+    They are of type &str (pronounced "string slice").
+    Stored in the program's memory as a fixed-size, read-only chunk of text.
+    Fast and efficient, but cannot be modified or resized.
+
+    String:
+
+    A more flexible representation of text, using the String type.
+    Can be created, modified, and resized at runtime.
+    Stored on the heap, which allows for dynamic memory allocation and deallocation.
+    Uses more memory and processing power compared to string literals.
+
+In summary, use string literals (&str) for fixed, read-only text, and String for text that needs to be changed or resized during program execution.
+-------
 
