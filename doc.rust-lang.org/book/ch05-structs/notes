@@ -45,3 +45,4 @@ assert_eq!(slice, &[2, 3]);
 
 //FIXME: seem to have taken notes from tryibg to understand last chapter here as well
 
+Major connectivity problems today :/
