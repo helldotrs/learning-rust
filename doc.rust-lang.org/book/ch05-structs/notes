@@ -46,3 +46,16 @@ assert_eq!(slice, &[2, 3]);
 //FIXME: seem to have taken notes from tryibg to understand last chapter here as well
 
 Major connectivity problems today :/
+
+------
+
+field init shorthand:
+
+fn build_user(email: String, username: String) -> User {
+    User {
+        active: true,
+        username,
+        email,
+        sign_in_count: 1,
+    }
+}
