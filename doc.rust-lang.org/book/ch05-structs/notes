@@ -50,7 +50,6 @@ Major connectivity problems today :/
 ------
 
 field init shorthand:
-
 fn build_user(email: String, username: String) -> User {
     User {
         active: true,
@@ -58,4 +57,14 @@ fn build_user(email: String, username: String) -> User {
         email,
         sign_in_count: 1,
     }
+}
+
+struct update syntax:
+fn main() {
+    // --snip--
+
+    let user2 = User {
+        email: String::from("another@example.com"),
+        ..user1 // takes non defined values from user1 (copies?)
+    };
 }
