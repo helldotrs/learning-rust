@@ -68,3 +68,10 @@ fn main() {
         ..user1 // takes non defined values from user1 (copies?)
     };
 }
+
+---------
+//vars, descriptive but messy
+    let width1 = 30;
+    let height1 = 50;
+//touple, organized but non-descriptive
+let rect1 = (30, 50);
