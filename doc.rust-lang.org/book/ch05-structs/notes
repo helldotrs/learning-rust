@@ -73,5 +73,13 @@ fn main() {
 //vars, descriptive but messy
     let width1 = 30;
     let height1 = 50;
-//touple, organized but non-descriptive
-let rect1 = (30, 50);
+    
+//tuple, structured but non-descriptive
+    let rect1 = (30, 50);
+    
+//struct, structured and descriptive
+  struct Rectangle {
+      width: u32,
+      height: u32,
+  }
+------------
