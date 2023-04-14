@@ -83,3 +83,9 @@ fn main() {
       height: u32,
   }
 ------------
+dbg!      takes ownership  //short for debug //reminder: ! means macro
+println!  takes a reference
+
+dbg!      prints to stderr (standard error console stream)
+println!  prints to stdout (standard output console stream)
+
